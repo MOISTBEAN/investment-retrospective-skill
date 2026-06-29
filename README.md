@@ -339,7 +339,7 @@ Do not use this project as:
 
 ## License
 
-TBD.
+MIT License.
 
 ## Disclaimer
 
