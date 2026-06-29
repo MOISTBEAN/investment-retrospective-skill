@@ -30,6 +30,7 @@ These documents are allowed to be minimum operated. They should not fail merely 
 | README | Explains MRVL as example / golden case, not the whole skill | PASS | Repository structure describes MRVL as a demonstration; the framework remains ticker-neutral. |
 | README | Starts price anomaly before narrative construction | PASS | Core workflow now orders price anomaly detection, event-window definition, benchmark comparison, driver/finding classification, and scoring before narrative-shift classification and story synthesis. |
 | Template | Preserves required output structure | PASS | It now includes Event Window Map, Claim Ledger, Price Reaction & Relative Return Map, Benchmark Layers, Expanded Data Layer, Valuation Re-rating Layer, Candidate Driver Attribution Matrix, Attribution Scoring Rubric, Source Register, and Required Source Backlog. |
+| Template | Adds a first-read finding layer without bypassing scoring | PASS | The First-read Finding Card is generated only after scoring and classification, preserves qualifications and `Pending`, and cannot add or upgrade claims, scores, confidence, or narrative-shift level. |
 | Template | Includes Fact / Reaction / Causal Attribution confidence | PASS | The three labels are separately defined and carried through timeline, claim, reaction, narrative, attribution, signal, and lesson structures. |
 | Template | Keeps story after scoring | PASS | Attribution scoring precedes the Narrative Shift Map, and the final takeaway follows the evidence and attribution sections. |
 | Market Fear | Requires pre-event fear / assumption mapping | PASS | Minimum evidence gate and core questions tie the fear to contemporaneous operating or valuation assumptions. |
@@ -52,6 +53,7 @@ Mark FAIL if any supporting doc:
 - Removes the need for source register or source limitations.
 - Forces every abnormal price move into narrative shift.
 - Uses MRVL-specific industry logic as universal logic.
+- Allows the First-read Finding Card to create or upgrade a finding before scoring.
 
 No supporting document currently triggers an automatic fail condition.
 

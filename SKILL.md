@@ -315,6 +315,33 @@ The executive takeaway should state the current conclusion without hiding uncert
 
 ---
 
+### 13.1 Add a First-read Finding Card
+
+Add a concise First-read Finding Card at the beginning of the report, after Scope and before the executive summary or executive attribution takeaway.
+
+Generate the card only after the claim ledger, candidate-driver matrix, attribution scores, confidence labels, and narrative-shift classification are complete. Its placement is for reading order only; it must not move interpretation ahead of scoring in the research workflow.
+
+Required fields:
+
+* Sharp finding
+* Strongest evidence
+* Most misleading false signal or strongest limiting evidence
+* Current classification
+* Still unproven
+* Fact confidence
+* Reaction confidence
+* Causal attribution confidence
+
+Hard rules:
+
+* Summarize only findings already supported in the scored report.
+* Do not add a new claim, driver, score, confidence upgrade, or narrative-shift upgrade.
+* Preserve material qualifications, overlapping-window limitations, alternative explanations, and `Pending` status.
+* Keep the card short enough to scan on first read.
+* Do not use the card as a replacement for the executive attribution takeaway, scorecard, or source register.
+
+---
+
 ### 14. Generate story only after scoring
 
 The final story must be generated from the scored evidence.

@@ -19,6 +19,21 @@
 - Reaction confidence: high / medium / low / pending — {{whether price action is stock-specific versus market, sector, and peers with follow-through}}
 - Causal Attribution confidence: high / medium / low / pending — {{whether source evidence explains why the market moved; price alone is not enough}}
 
+## 0.1 First-read Finding Card
+
+> Generate this card only after scoring and classification are complete. Place it here for reading order; do not use it to create or upgrade findings.
+
+- **Sharp finding:** {{one-sentence finding already supported by the scored report}}
+- **Strongest evidence:** {{2–4 strongest evidence layers or windows}}
+- **Most misleading false signal or strongest limiting evidence:** {{the evidence most likely to be overread, or the strongest constraint on the finding}}
+- **Current classification:** {{supported finding type and, if applicable, narrative-shift level}}
+- **Still unproven:** {{material missing evidence, alternatives, or Pending tests}}
+- **Fact confidence:** high / medium / low
+- **Reaction confidence:** high / medium / low / pending
+- **Causal Attribution confidence:** high / medium / low / pending
+
+The card must preserve overlapping-window limitations, alternative explanations, and `Pending` status. It does not replace the executive summary, attribution matrix, or source register.
+
 ## 1. Executive Summary
 
 Summarize in 5–8 bullets:

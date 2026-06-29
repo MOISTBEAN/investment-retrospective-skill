@@ -79,9 +79,19 @@ investment-retrospective-skill/
 │   ├── market-fear-checklist.md
 │   ├── true-signal-vs-noise.md
 │   └── source-quality-checklist.md
-└── examples/
-    └── mrvl-retrospective.md
+├── examples/
+│   ├── mrvl-retrospective.md
+│   ├── asts-retrospective.md
+│   └── flnc-retrospective.md
+└── tests/
+    ├── 01_core_skill_contract.md
+    └── 02_supporting_docs_smoke_audit.md
 ```
+## Example coverage
+* **MRVL:** Candidate narrative shift discipline case.
+* **ASTS:** External-validation / pre-revenue commercial-pathway case.
+* **FLNC:** Backlog-to-margin / execution-reset / AI/data-center infrastructure candidate case.
+
 
 - `SKILL.md` contains the operating instructions and evidence discipline for an AI analyst.
 - `templates/retrospective-report.md` is the reusable report structure.
