@@ -14,7 +14,7 @@ But a clean story is not the same as a verified explanation.
 
 This project helps turn post-move stock narratives into an auditable attribution framework. It separates what happened, how the market reacted, and what can reasonably be attributed to specific drivers based on available evidence.
 
-> Not a trading bot. Not a stock picker. Not investment advice.  
+> Not a trading bot. Not a stock picker. Not investment advice.
 > This is a post-event learning framework for cleaner attribution.
 
 ## Why this exists
@@ -27,12 +27,12 @@ After a stock rallies or sells off, it becomes easy to explain the move using wh
 
 That creates a problem for investors, analysts, and builders of investment research workflows:
 
-- Price reaction gets confused with causality
-- Strong narratives get treated as strong evidence
-- Missing sources are ignored
-- Benchmark-relative performance is skipped
-- Event windows are chosen after the fact
-- Confidence levels are rarely separated across facts, reactions, and attribution
+* Price reaction gets confused with causality
+* Strong narratives get treated as strong evidence
+* Missing sources are ignored
+* Benchmark-relative performance is skipped
+* Event windows are chosen after the fact
+* Confidence levels are rarely separated across facts, reactions, and attribution
 
 This project exists to fight that pattern.
 
@@ -40,31 +40,31 @@ The goal is not to remove judgment from investment analysis. The goal is to make
 
 A good retrospective should answer three different questions separately:
 
-1. **What happened?**  
+1. **What happened?**
    The factual record: filings, earnings, guidance, product launches, customer announcements, regulatory events, financing updates, analyst revisions, or other verifiable events.
 
-2. **How did the market react?**  
+2. **How did the market react?**
    The price and volume response, measured against the relevant event window, benchmarks, peers, sector ETFs, and prior expectations.
 
-3. **What can we actually attribute the reaction to?**  
+3. **What can we actually attribute the reaction to?**
    The causal interpretation, ranked by evidence quality and confidence rather than narrative convenience.
 
 The key principle is simple:
 
-**Price movement is evidence of reaction.  
+**Price movement is evidence of reaction.
 It is not, by itself, evidence of causality.**
 
 Investment Retrospective Skill provides a repeatable way to break down a post-move story into:
 
-- Event Window Map
-- Benchmark Comparison
-- Claim Ledger
-- Candidate Driver Attribution Matrix
-- Fact / Reaction / Causal Attribution Confidence
-- Source Register
-- Required Source Backlog
-- Narrative Shift Classification
-- Lessons and Future Watchlist Rules
+* Event Window Map
+* Benchmark Comparison
+* Claim Ledger
+* Candidate Driver Attribution Matrix
+* Fact / Reaction / Causal Attribution Confidence
+* Source Register
+* Required Source Backlog
+* Narrative Shift Classification
+* Lessons and Future Watchlist Rules
 
 The output is not a smoother story.
 
@@ -74,26 +74,26 @@ This matters because the best lessons from investing often come from looking bac
 
 ## Example coverage
 
-| Example | Case type | Core lesson |
-| --- | --- | --- |
-| `MRVL` | Candidate narrative shift discipline | A strong price reaction is not enough to confirm a narrative shift. |
-| `ASTS` | External validation / pre-revenue commercial pathway | External validation can reduce failure probability before service revenue is proven. |
-| `FLNC` | Backlog-to-margin / execution reset / AI infrastructure candidate | Backlog is not the same as revenue timing or margin quality. |
+| Example | Case type                                                         | Core lesson                                                                          |
+| ------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `MRVL`  | Candidate narrative shift discipline                              | A strong price reaction is not enough to confirm a narrative shift.                  |
+| `ASTS`  | External validation / pre-revenue commercial pathway              | External validation can reduce failure probability before service revenue is proven. |
+| `FLNC`  | Backlog-to-margin / execution reset / AI infrastructure candidate | Backlog is not the same as revenue timing or margin quality.                         |
 
 ## What this skill does
 
-| Capability | What it does | Why it matters |
-| --- | --- | --- |
-| Price anomaly first | Starts from abnormal stock moves instead of a prewritten story | Reduces hindsight bias |
-| Event Window Map | Anchors each major move to a dated disclosure window | Prevents vague attribution |
-| Benchmark comparison | Compares the stock against market, sector, and peer returns | Separates stock-specific reaction from beta |
-| Claim Ledger | Tracks facts, interpretations, and attribution claims separately | Makes the research auditable |
-| Price Reaction & Relative Return Map | Measures 1D, 5D, and 20D reactions where data are available | Shows whether a move was immediate, sustained, or reversed |
-| Candidate Driver Attribution Matrix | Scores possible drivers without treating price as proof | Improves causal discipline |
-| Fact / Reaction / Causal Attribution confidence | Separates factual confidence, market-reaction confidence, and causal confidence | Avoids overclaiming |
-| Narrative Shift Classification | Classifies whether the evidence supports reaction-only, candidate shift, external validation, or confirmed shift | Makes conclusions more precise |
-| Source Register | Records source quality, proximity, and limitations | Keeps the report transparent |
-| Required Source Backlog | Lists missing evidence needed for stronger conclusions | Shows what remains unproven |
+| Capability                                      | What it does                                                                                                     | Why it matters                                             |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Price anomaly first                             | Starts from abnormal stock moves instead of a prewritten story                                                   | Reduces hindsight bias                                     |
+| Event Window Map                                | Anchors each major move to a dated disclosure window                                                             | Prevents vague attribution                                 |
+| Benchmark comparison                            | Compares the stock against market, sector, and peer returns                                                      | Separates stock-specific reaction from beta                |
+| Claim Ledger                                    | Tracks facts, interpretations, and attribution claims separately                                                 | Makes the research auditable                               |
+| Price Reaction & Relative Return Map            | Measures 1D, 5D, and 20D reactions where data are available                                                      | Shows whether a move was immediate, sustained, or reversed |
+| Candidate Driver Attribution Matrix             | Scores possible drivers without treating price as proof                                                          | Improves causal discipline                                 |
+| Fact / Reaction / Causal Attribution confidence | Separates factual confidence, market-reaction confidence, and causal confidence                                  | Avoids overclaiming                                        |
+| Narrative Shift Classification                  | Classifies whether the evidence supports reaction-only, candidate shift, external validation, or confirmed shift | Makes conclusions more precise                             |
+| Source Register                                 | Records source quality, proximity, and limitations                                                               | Keeps the report transparent                               |
+| Required Source Backlog                         | Lists missing evidence needed for stronger conclusions                                                           | Shows what remains unproven                                |
 
 ## What the output looks like
 
@@ -201,35 +201,35 @@ examples/flnc-retrospective.md
 
 The skill works best when you provide:
 
-| Input | Examples |
-| --- | --- |
-| Company and ticker | `MRVL`, `ASTS`, `FLNC` |
-| Time range | `2024-01-01 to 2026-06-30` |
-| Major events | Earnings, guidance changes, customer announcements, regulatory approvals, short reports, product launches |
-| Price data | Stock returns, benchmark returns, peer returns |
-| Primary sources | SEC filings, earnings releases, company announcements, customer or regulator statements |
-| Secondary sources | Industry reports, analyst commentary, news articles |
-| Missing data notes | Consensus estimates, valuation history, short interest, options, flow data |
+| Input              | Examples                                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| Company and ticker | `MRVL`, `ASTS`, `FLNC`                                                                                    |
+| Time range         | `2024-01-01 to 2026-06-30`                                                                                |
+| Major events       | Earnings, guidance changes, customer announcements, regulatory approvals, short reports, product launches |
+| Price data         | Stock returns, benchmark returns, peer returns                                                            |
+| Primary sources    | SEC filings, earnings releases, company announcements, customer or regulator statements                   |
+| Secondary sources  | Industry reports, analyst commentary, news articles                                                       |
+| Missing data notes | Consensus estimates, valuation history, short interest, options, flow data                                |
 
 ## Outputs
 
 A completed retrospective can include:
 
-- First-read Finding Card
-- Original Market Fear
-- Event Timeline
-- Event Window Map
-- Claim Ledger
-- Price Reaction & Relative Return Map
-- Benchmark Layers
-- Valuation Re-rating Layer
-- Candidate Driver Attribution Matrix
-- Narrative Shift Map
-- True Signal vs Noise
-- Lessons Learned
-- Future Watchlist Rules
-- Source Register
-- Required Source Backlog
+* First-read Finding Card
+* Original Market Fear
+* Event Timeline
+* Event Window Map
+* Claim Ledger
+* Price Reaction & Relative Return Map
+* Benchmark Layers
+* Valuation Re-rating Layer
+* Candidate Driver Attribution Matrix
+* Narrative Shift Map
+* True Signal vs Noise
+* Lessons Learned
+* Future Watchlist Rules
+* Source Register
+* Required Source Backlog
 
 ## Repository structure
 
@@ -260,14 +260,14 @@ The skill can produce reports in English or Chinese.
 
 By default, it matches the user's input language while preserving core audit labels for consistency:
 
-- Fact confidence
-- Reaction confidence
-- Causal Attribution confidence
-- Claim Ledger
-- Price Reaction & Relative Return Map
-- Candidate Driver Attribution Matrix
-- Source Register
-- Required Source Backlog
+* Fact confidence
+* Reaction confidence
+* Causal Attribution confidence
+* Claim Ledger
+* Price Reaction & Relative Return Map
+* Candidate Driver Attribution Matrix
+* Source Register
+* Required Source Backlog
 
 ## Recommended first use
 
@@ -275,12 +275,12 @@ Start with one stock, one clearly bounded 12–24 month period, and a small set 
 
 Prefer:
 
-- SEC filings
-- Earnings releases
-- Official customer or partner announcements
-- Regulator statements
-- Reputable industry reporting
-- Dated market data
+* SEC filings
+* Earnings releases
+* Official customer or partner announcements
+* Regulator statements
+* Reputable industry reporting
+* Dated market data
 
 Complete one careful report before attempting automation or expanding the universe.
 
@@ -300,42 +300,42 @@ The validator checks whether the core skill contract and example structure still
 
 Use this project for:
 
-- Post-event stock retrospectives
-- Studying narrative-driven revaluations
-- Reviewing major drawdowns and rebounds
-- Separating real business changes from market overreaction
-- Building AI-assisted investment research workflows
-- Creating structured case studies for learning and review
+* Post-event stock retrospectives
+* Studying narrative-driven revaluations
+* Reviewing major drawdowns and rebounds
+* Separating real business changes from market overreaction
+* Building AI-assisted investment research workflows
+* Creating structured case studies for learning and review
 
 ## Not suitable for
 
 Do not use this project as:
 
-- A stock picker
-- A trading bot
-- A forecasting model
-- A valuation engine
-- A real-time market monitor
-- A replacement for professional financial advice
-- A tool for producing buy, sell, or hold recommendations
+* A stock picker
+* A trading bot
+* A forecasting model
+* A valuation engine
+* A real-time market monitor
+* A replacement for professional financial advice
+* A tool for producing buy, sell, or hold recommendations
 
 ## Guardrails
 
-- Do not fabricate events, dates, sources, quotes, financial data, customer names, or price moves.
-- Do not treat price movement alone as proof of causality.
-- Always include plausible alternative explanations for major moves.
-- Always separate fact, management claim, market reaction, inference, and attribution hypothesis.
-- Always mark evidence strength and confidence.
-- Preserve the information set available at the time to reduce hindsight bias.
-- Use this framework for research education, not financial advice.
+* Do not fabricate events, dates, sources, quotes, financial data, customer names, or price moves.
+* Do not treat price movement alone as proof of causality.
+* Always include plausible alternative explanations for major moves.
+* Always separate fact, management claim, market reaction, inference, and attribution hypothesis.
+* Always mark evidence strength and confidence.
+* Preserve the information set available at the time to reduce hindsight bias.
+* Use this framework for research education, not financial advice.
 
 ## Roadmap
 
-- **v0.1:** Evidence-first retrospective framework with MRVL, ASTS, and FLNC examples
-- **v0.1.x:** Reader-facing brief template and README clarity improvements
-- **v0.2:** Optional structured JSON sidecar for event windows and claim ledgers
-- **v0.3:** Stronger validation checks for confidence labels and narrative-shift classification
-- **v0.4:** Optional lightweight tooling for CSV timeline and price-reaction mapping
+* **v0.1:** Evidence-first retrospective framework with MRVL, ASTS, and FLNC examples
+* **v0.1.x:** Reader-facing brief template and README clarity improvements
+* **v0.2:** Optional structured JSON sidecar for event windows and claim ledgers
+* **v0.3:** Stronger validation checks for confidence labels and narrative-shift classification
+* **v0.4:** Optional lightweight tooling for CSV timeline and price-reaction mapping
 
 ## License
 
