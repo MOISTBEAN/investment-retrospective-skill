@@ -4,6 +4,8 @@
 
 Investment Retrospective Skill is a Skill-style framework for studying past investment cases. It maps events, market fears, narrative shifts, price reactions, and lessons into reusable future watchlist rules.
 
+The skill can produce reports in English or Chinese. By default, it matches the user's input language while preserving core audit labels for consistency.
+
 The framework is designed for retrospective learning. It is not a stock recommendation system, trading bot, forecasting model, or substitute for professional financial advice.
 
 ## Why this exists

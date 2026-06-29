@@ -14,6 +14,26 @@ Confidence before story.
 
 ---
 
+## Language Policy
+
+- Match the user's requested output language.
+- If the user explicitly requests English, produce the report in English.
+- If the user explicitly requests Chinese, produce the report in Chinese.
+- If the user does not specify an output language, match the main language of the user's input.
+- Preserve core audit labels in English unless the user explicitly asks for full localization:
+  - Fact confidence
+  - Reaction confidence
+  - Causal Attribution confidence
+  - Claim Ledger
+  - Price Reaction & Relative Return Map
+  - Candidate Driver Attribution Matrix
+  - Source Register
+  - Required Source Backlog
+- Company names, tickers, event window IDs, claim IDs, source IDs, confidence grades, and numeric evidence must remain consistent across languages.
+- Translating or localizing the report must not change facts, scores, confidence labels, source quality, attribution limits, or narrative-shift classification.
+
+---
+
 ## Non-Goals
 
 This skill must not:

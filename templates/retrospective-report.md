@@ -2,6 +2,8 @@
 
 > Replace every placeholder. Retain `[RESEARCH NEEDED]`, `[VERIFY]`, `[CALCULATE]`, `[ADD]`, or `[DATA NOT PROVIDED]` where evidence is unavailable; never guess.
 
+> Output language should match the user's requested language. If no language is specified, match the user's input language. Preserve core audit labels unless full localization is explicitly requested.
+
 ## 0. Scope
 
 - Company:
