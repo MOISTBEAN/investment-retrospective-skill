@@ -38,7 +38,7 @@ These documents are allowed to be minimum operated. They should not fail merely 
 | Source Quality | Does not allow rumors as factual validation | PASS | Tier 5 may provide sentiment context only and cannot anchor factual claims. |
 | Source Quality | Does not treat management commentary as external validation | PASS | Management commentary establishes company framing but is insufficient alone for market causality or external validation. |
 | True Signal vs Noise | Distinguishes stronger signals from noisy signals | PASS | Mandatory gates and classification guide distinguish true, possible, noisy, and uncertain signals. |
-| True Signal vs Noise | Flags one-day spikes, generic headlines, and management optimism as possible false positives | WARN | It explicitly flags one-day reactions, management optimism, sector beta, and low-quality sources; “generic headlines” is not named directly, but the surrounding rule is aligned and not misleading. |
+| True Signal vs Noise | Flags one-day spikes, generic headlines, and management optimism as possible false positives | PASS | It explicitly flags one-day reactions, generic headlines and broad news-cycle excitement, management optimism, sector beta, and low-quality sources. |
 
 ## Automatic Fail Conditions
 
@@ -64,7 +64,7 @@ Mark WARN, not FAIL, if a document is:
 - MVP-level but aligned with the skill.
 - Clear enough for now but worth expanding later.
 
-The True Signal vs Noise wording receives WARN rather than FAIL because its false-positive controls are substantively aligned despite one missing phrase.
+No current supporting-doc row requires WARN. Retain WARN for future thin-but-aligned MVP documentation rather than treating incompleteness alone as failure.
 
 ## Expected Result
 
@@ -74,4 +74,4 @@ The smoke audit fails only if supporting docs create real attribution risk.
 
 ## Audit Result
 
-**PASS.** The README and template are now aligned with the anomaly-first core contract. No FAIL rows remain; the single True Signal vs Noise wording WARN is thin-but-consistent and may be deferred.
+**PASS.** The README, template, and checklists are aligned with the anomaly-first core contract. No FAIL or WARN rows remain.

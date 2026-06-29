@@ -175,6 +175,8 @@ A stock move should not be labeled valuation rerating unless forward multiples e
 
 An attribution score measures the evidence stack, not certainty about cause. Price action alone may support Reaction confidence, but it cannot establish Causal Attribution confidence.
 
+**Story synthesis gate:** Complete the candidate-driver matrix and attribution scoring before drafting the narrative. Do not use the story to justify scores after the fact; preserve `Pending` where evidence is missing.
+
 ## 7. Narrative Shift Map
 
 ### Old narrative

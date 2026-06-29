@@ -33,6 +33,26 @@ The aim is to reconstruct what was knowable at each point in time, distinguish e
 10. Story synthesis after scoring
 11. Source register and source backlog
 
+## Current status
+
+- Core contract audit: PASS
+- Supporting docs audit: PASS
+- MRVL regression audit: PASS
+- Overall suite: PASS
+
+## How to use
+
+1. Start with an abnormal stock move.
+2. Define the event windows and effective trading dates.
+3. Benchmark the move against market, sector, and peers.
+4. Map claims to dated sources and limitations.
+5. Score candidate drivers and finding types.
+6. Assign Fact, Reaction, and Causal Attribution confidence separately.
+7. Generate the story only after scoring.
+8. Preserve `Pending`, `[CALCULATE]`, `[VERIFY]`, `[VERIFY TIME]`, or `[ADD]` where evidence is missing.
+
+**Scope warning:** This is not investment advice or a buy/sell recommendation tool. MRVL is the golden example, not the whole skill.
+
 ## What the Skill produces
 
 The output is a structured retrospective report containing:

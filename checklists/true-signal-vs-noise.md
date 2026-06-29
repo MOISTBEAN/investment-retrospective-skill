@@ -32,6 +32,7 @@ A signal is stronger when:
 A signal is weaker when:
 
 - [ ] It is only loosely related to the core thesis.
+- [ ] It relies on generic headlines, broad AI/news-cycle excitement, or undifferentiated sector narratives without a specific event window, benchmark-relative move, and independent evidence layer.
 - [ ] It does not change forward expectations.
 - [ ] It is management optimism without external validation.
 - [ ] It was already widely expected.
