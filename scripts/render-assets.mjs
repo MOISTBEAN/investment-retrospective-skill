@@ -1,4 +1,4 @@
-import { mkdir } from "node:fs/promises";
+import { copyFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -13,8 +13,15 @@ const sourcePath = path.join(
   "social-preview.html",
 );
 const outputPath = path.join(repositoryRoot, "assets", "social-preview.png");
+const docsOutputPath = path.join(
+  repositoryRoot,
+  "docs",
+  "assets",
+  "social-preview.png",
+);
 
 await mkdir(path.dirname(outputPath), { recursive: true });
+await mkdir(path.dirname(docsOutputPath), { recursive: true });
 
 const browser = await chromium.launch({ headless: true });
 
@@ -44,8 +51,11 @@ try {
     fullPage: false,
     animations: "disabled",
   });
+  await copyFile(outputPath, docsOutputPath);
 
-  console.log(`Rendered ${path.relative(repositoryRoot, outputPath)} (1280x640)`);
+  console.log(
+    `Rendered ${path.relative(repositoryRoot, outputPath)} and synced ${path.relative(repositoryRoot, docsOutputPath)} (1280x640)`,
+  );
 } finally {
   await browser.close();
 }
