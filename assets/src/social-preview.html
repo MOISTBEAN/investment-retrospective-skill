@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Retrospective Skill — Social Preview</title>
+    <style>
+      :root {
+        --paper: #f7f8fa;
+        --ink: #111318;
+        --muted: #555b66;
+        --rule: #d9dde3;
+        --blue: #245b9e;
+        --blue-soft: #e9f0f8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1280px;
+        height: 640px;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        color: var(--ink);
+        background:
+          linear-gradient(var(--rule), var(--rule)) 0 102px / 100% 1px no-repeat,
+          linear-gradient(var(--rule), var(--rule)) 0 548px / 100% 1px no-repeat,
+          var(--paper);
+        font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+      }
+
+      main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 52px 72px 36px;
+      }
+
+      main::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 100%;
+        background: var(--blue);
+        content: "";
+      }
+
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 0;
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 30px;
+        height: 2px;
+        background: var(--blue);
+        content: "";
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 48px;
+        align-items: end;
+        margin-top: 49px;
+      }
+
+      h1 {
+        max-width: 900px;
+        margin: 0;
+        font-size: 56px;
+        font-weight: 650;
+        letter-spacing: -0.045em;
+        line-height: 0.98;
+      }
+
+      .tagline {
+        margin: 0 0 2px;
+        color: #343942;
+        font-size: 20px;
+        font-weight: 430;
+        letter-spacing: -0.018em;
+        line-height: 1.38;
+        white-space: nowrap;
+      }
+
+      .flow {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 34px;
+        margin-top: 73px;
+      }
+
+      .flow::before {
+        position: absolute;
+        top: 22px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background: #aeb5bf;
+        content: "";
+      }
+
+      .step {
+        position: relative;
+        min-height: 124px;
+        padding-top: 62px;
+      }
+
+      .step-number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: grid;
+        width: 45px;
+        height: 45px;
+        place-items: center;
+        border: 1.5px solid var(--blue);
+        border-radius: 50%;
+        color: var(--blue);
+        background: var(--paper);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .step-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        font-size: 17px;
+        font-weight: 750;
+        letter-spacing: 0.1em;
+        line-height: 1;
+      }
+
+      .step-title::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--blue);
+        content: "";
+      }
+
+      .step-question {
+        margin: 14px 0 0 17px;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 450;
+        letter-spacing: -0.012em;
+        line-height: 1.25;
+      }
+
+      footer {
+        position: absolute;
+        right: 72px;
+        bottom: 0;
+        left: 72px;
+        display: flex;
+        height: 91px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer-line {
+        margin: 0;
+        color: #272c34;
+        font-size: 14px;
+        font-weight: 720;
+        letter-spacing: 0.13em;
+        line-height: 1;
+      }
+
+      .footer-mark {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 650;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .footer-mark::after {
+        width: 34px;
+        height: 8px;
+        border: 1px solid var(--blue);
+        background: var(--blue-soft);
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <main aria-label="Investment Retrospective Skill social preview">
+      <p class="eyebrow">Evidence-first audit framework</p>
+
+      <section class="hero" aria-labelledby="project-title">
+        <h1 id="project-title">Investment Retrospective Skill</h1>
+        <p class="tagline">
+          Extract real alpha from hindsight,<br />
+          not stories from price moves.
+        </p>
+      </section>
+
+      <section class="flow" aria-label="Three-step audit flow">
+        <article class="step">
+          <span class="step-number">01</span>
+          <h2 class="step-title">FACTS</h2>
+          <p class="step-question">What actually happened?</p>
+        </article>
+
+        <article class="step">
+          <span class="step-number">02</span>
+          <h2 class="step-title">REACTION</h2>
+          <p class="step-question">How did the market react?</p>
+        </article>
+
+        <article class="step">
+          <span class="step-number">03</span>
+          <h2 class="step-title">ATTRIBUTION</h2>
+          <p class="step-question">What can the evidence support?</p>
+        </article>
+      </section>
+
+      <footer>
+        <p class="footer-line">FACTS → MARKET REACTION → CAUSAL ATTRIBUTION</p>
+        <span class="footer-mark">Retrospective / 01</span>
+      </footer>
+    </main>
+  </body>
+</html>
