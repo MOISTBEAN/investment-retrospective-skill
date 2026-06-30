@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f7f8fa" />
+    <meta name="theme-color" content="#f8f6f0" />
     <meta
       name="description"
-      content="An evidence-first audit framework for separating facts, market reactions, and causal attribution in investment retrospectives."
+      content="A post-event attribution framework that separates facts, market reaction, competing explanations, and causal attribution."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Investment Retrospective Skill" />
-    <meta
-      property="og:description"
-      content="Extract real alpha from hindsight, not stories from price moves."
-    />
+    <meta property="og:description" content="Turn hindsight into an audit trail." />
     <meta
       property="og:image"
       content="https://moistbean.github.io/investment-retrospective-skill/assets/social-preview.png"
@@ -32,213 +29,264 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
-      <nav class="nav shell" aria-label="Primary navigation">
+      <nav class="nav page-shell" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="Investment Retrospective Skill home">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-seal" aria-hidden="true">IRS</span>
           <span>Investment Retrospective Skill</span>
         </a>
         <div class="nav-links">
-          <a href="#method">Method</a>
-          <a href="#examples">Examples</a>
+          <a href="#methodology">Methodology</a>
+          <a href="#cases">Cases</a>
+          <a href="#quick-start">Quick Start</a>
           <a
-            class="nav-github"
-            href="https://github.com/MOISTBEAN/investment-retrospective-skill"
-          >GitHub</a>
+            href="https://github.com/MOISTBEAN/investment-retrospective-skill/blob/main/SKILL.md"
+          >Docs</a>
         </div>
+        <a
+          class="nav-star"
+          href="https://github.com/MOISTBEAN/investment-retrospective-skill"
+        >Star this repo <span aria-hidden="true">★</span></a>
       </nav>
     </header>
 
-    <main id="main-content">
-      <section class="hero shell" id="top" aria-labelledby="hero-title">
+    <main id="main-content" class="page-shell">
+      <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Evidence-first audit framework</p>
-          <h1 id="hero-title">Extract real alpha from hindsight.</h1>
-          <p class="hero-lede">
-            Separate what happened, how the market reacted, and what the evidence
-            can actually support.
+          <p class="hook">Most investment research is narrative reconstruction after the move.</p>
+          <h1 id="hero-title">Turn hindsight into an audit trail.</h1>
+          <p class="hero-subhead">
+            A post-event attribution framework separating Facts → Market Reaction →
+            Causal Attribution.
           </p>
+          <p class="identity-line">Built for analysts who believe price is not explanation.</p>
+
           <div class="hero-actions">
             <a
               class="button button-primary"
               href="https://github.com/MOISTBEAN/investment-retrospective-skill/blob/main/SKILL.md"
-            >Read the framework</a>
-            <a class="button button-secondary" href="#examples">Browse examples</a>
+            >Read framework <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#cases">
+              Start with a case <span aria-hidden="true">→</span>
+            </a>
+            <a
+              class="button button-star"
+              href="https://github.com/MOISTBEAN/investment-retrospective-skill"
+            >Star this repo <span aria-hidden="true">★</span></a>
           </div>
         </div>
 
-        <figure class="hero-visual">
-          <img
-            src="assets/social-preview.png"
-            width="1280"
-            height="640"
-            alt="Investment Retrospective Skill audit flow from facts to market reaction to causal attribution"
-          />
-        </figure>
-      </section>
-
-      <section class="principle" aria-labelledby="principle-title">
-        <div class="shell">
-          <p class="section-kicker" id="principle-title">The core distinction</p>
-          <div class="audit-flow">
-            <article>
-              <p class="audit-label">Facts</p>
-              <h2>What actually happened?</h2>
-              <p>Build the record from dated filings, disclosures, and verifiable events.</p>
-            </article>
-            <article>
-              <p class="audit-label">Market reaction</p>
-              <h2>Was the move abnormal?</h2>
-              <p>Compare the stock with market, sector, peers, and defined event windows.</p>
-            </article>
-            <article>
-              <p class="audit-label">Causal attribution</p>
-              <h2>What can evidence support?</h2>
-              <p>Score candidate drivers without treating price movement as causal proof.</p>
-            </article>
+        <aside class="hero-stack" aria-labelledby="hero-stack-title">
+          <h2 id="hero-stack-title">The Attribution Stack</h2>
+          <div class="mini-stack">
+            <div class="mini-layer">
+              <span>Facts</span>
+              <p>Verify what happened.</p>
+            </div>
+            <span class="stack-arrow" aria-hidden="true">↓</span>
+            <div class="mini-layer">
+              <span>Market Reaction</span>
+              <p>Observe what moved.</p>
+            </div>
+            <span class="stack-arrow" aria-hidden="true">↓</span>
+            <div class="mini-layer mini-layer-emphasis">
+              <span>Competing Explanations</span>
+              <p>Keep plausible stories alive.</p>
+            </div>
+            <span class="stack-arrow" aria-hidden="true">↓</span>
+            <div class="mini-layer mini-layer-output">
+              <span>Causal Attribution</span>
+              <p>State only what evidence supports.</p>
+            </div>
           </div>
-        </div>
+        </aside>
       </section>
 
-      <section class="method shell" id="method" aria-labelledby="method-title">
-        <div class="method-intro">
-          <h2 id="method-title">A retrospective should be auditable.</h2>
-          <p>
-            The framework starts with price anomalies, defines the test, and preserves
-            uncertainty when the evidence runs out.
+      <section class="problem" aria-labelledby="problem-title">
+        <div class="section-intro">
+          <p class="section-label">The problem</p>
+          <h2 id="problem-title">The chart moves first. The story is rewritten after.</h2>
+        </div>
+        <div class="problem-content">
+          <ul>
+            <li>Price reaction mistaken for causality</li>
+            <li>Strong narratives treated as evidence</li>
+            <li>Benchmarks ignored</li>
+            <li>Event windows chosen after the fact</li>
+            <li>Missing evidence removed</li>
+            <li>Confidence not explicitly separated</li>
+          </ul>
+          <p class="problem-conclusion">
+            This framework forces <strong>decomposition before interpretation.</strong>
           </p>
         </div>
+      </section>
 
-        <div class="method-ledger">
-          <div class="ledger-group">
-            <h3>Map the evidence</h3>
-            <dl>
-              <div>
-                <dt>Event Window Map</dt>
-                <dd>Fix event dates, disclosure timing, T0, and follow-through windows.</dd>
-              </div>
-              <div>
-                <dt>Benchmark comparison</dt>
-                <dd>Control for broad market, sector, and peer movement.</dd>
-              </div>
-              <div>
-                <dt>Claim Ledger</dt>
-                <dd>Separate facts, reactions, interpretations, and inferences.</dd>
-              </div>
-              <div>
-                <dt>Source Register</dt>
-                <dd>Record source quality, proximity, use, and limitations.</dd>
-              </div>
-            </dl>
-          </div>
+      <section class="core-system" id="methodology" aria-labelledby="core-system-title">
+        <div class="section-intro">
+          <p class="section-label">The core system</p>
+          <h2 id="core-system-title">Not a model. A reasoning system.</h2>
+        </div>
+        <div class="system-layers">
+          <article>
+            <span class="layer-key">L1</span>
+            <div><h3>Facts</h3><p>Verifiable</p></div>
+            <strong>What is objectively true</strong>
+          </article>
+          <article>
+            <span class="layer-key">L2</span>
+            <div><h3>Market Reaction</h3><p>Observable</p></div>
+            <strong>What changed in the market</strong>
+          </article>
+          <article>
+            <span class="layer-key">L3</span>
+            <div><h3>Competing Explanations</h3><p>Hypotheses</p></div>
+            <strong>What might explain it</strong>
+          </article>
+          <article>
+            <span class="layer-key">L4</span>
+            <div><h3>Causal Attribution</h3><p>Evidence-weighted</p></div>
+            <strong>What the evidence supports</strong>
+          </article>
+        </div>
+        <p class="system-statement">
+          It is not a single explanation system. It is a competing explanation system.
+        </p>
+      </section>
 
-          <div class="ledger-group ledger-group-accent">
-            <h3>Limit the conclusion</h3>
-            <dl>
-              <div>
-                <dt>Driver matrix</dt>
-                <dd>Test fundamentals, expectations, valuation, policy, flows, and alternatives.</dd>
-              </div>
-              <div>
-                <dt>Three confidence layers</dt>
-                <dd>Keep Fact, Reaction, and Causal Attribution confidence separate.</dd>
-              </div>
-              <div>
-                <dt>Narrative classification</dt>
-                <dd>Distinguish reaction, candidate shift, external validation, and confirmation.</dd>
-              </div>
-              <div>
-                <dt>Required Source Backlog</dt>
-                <dd>Show exactly what remains missing instead of inventing certainty.</dd>
-              </div>
-            </dl>
-          </div>
+      <section class="attribution-module" aria-labelledby="attribution-title">
+        <div class="section-intro compact-intro">
+          <p class="section-label">Evidence flow</p>
+          <h2 id="attribution-title">How the attribution stack resolves uncertainty.</h2>
+        </div>
+        <div class="attribution-grid">
+          <article class="attribution-layer">
+            <span class="module-index">01</span>
+            <h3>Observed Price Move</h3>
+            <p>Document direction, magnitude, timing, benchmarks, and peers.</p>
+            <div class="confidence-ui" aria-label="Low confidence">
+              <strong>Low confidence</strong>
+              <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </article>
+          <span class="module-arrow" aria-hidden="true">→</span>
+          <article class="attribution-layer layer-hypotheses">
+            <span class="module-index">02</span>
+            <h3>Competing Explanations</h3>
+            <p>Keep fundamental, expectation, sector, flow, policy, and technical drivers open.</p>
+            <div class="confidence-ui" aria-label="Low to medium confidence">
+              <strong>Low to medium</strong>
+              <span class="dot active"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </article>
+          <span class="module-arrow" aria-hidden="true">→</span>
+          <article class="attribution-layer layer-weighting">
+            <span class="module-index">03</span>
+            <h3>Evidence Weighting</h3>
+            <p>Compare source quality, timing, alternatives, and multi-window follow-through.</p>
+            <div class="confidence-ui" aria-label="Medium confidence">
+              <strong>Medium</strong>
+              <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span>
+            </div>
+          </article>
+          <span class="module-arrow" aria-hidden="true">→</span>
+          <article class="attribution-layer layer-output">
+            <span class="module-index">04</span>
+            <h3>Causal Attribution Output</h3>
+            <p>Publish the best-supported conclusion with uncertainty and limits intact.</p>
+            <div class="confidence-ui" aria-label="Evidence-weighted confidence">
+              <strong>Evidence-weighted</strong>
+              <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="boundary" aria-labelledby="boundary-title">
-        <div class="shell boundary-layout">
-          <div>
-            <h2 id="boundary-title">Not a smoother story.</h2>
-            <p>A cleaner distinction between what is known, inferred, and still unproven.</p>
-          </div>
-          <div class="boundary-statements" aria-label="Framework boundaries">
-            <p>Not a trading bot.</p>
-            <p>Not a stock picker.</p>
-            <p>Not investment advice.</p>
-          </div>
+      <section class="cases" id="cases" aria-labelledby="cases-title">
+        <div class="section-intro compact-intro">
+          <p class="section-label">Cases</p>
+          <h2 id="cases-title">Attribution failure modes</h2>
         </div>
-      </section>
-
-      <section class="examples shell" id="examples" aria-labelledby="examples-title">
-        <div class="examples-heading">
-          <h2 id="examples-title">Three cases. Three attribution problems.</h2>
-          <p>Each report applies the same audit structure to a different market setup.</p>
-        </div>
-
-        <div class="case-list">
+        <div class="case-grid">
           <a
-            class="case-row"
+            class="case-card"
             href="https://github.com/MOISTBEAN/investment-retrospective-skill/blob/main/examples/mrvl-retrospective.md"
           >
             <span class="case-ticker">MRVL</span>
-            <span class="case-copy">
-              <strong>Candidate narrative shift discipline</strong>
-              <span>A strong price reaction is not enough to confirm a narrative shift.</span>
-            </span>
-            <span class="case-action">Read case</span>
+            <h3>Mistaking narrative shift for fundamental change</h3>
+            <p>A strong reaction can precede operating confirmation.</p>
+            <div class="case-insight">
+              <strong>Why this is misleading</strong>
+              <span>Story upgrades and fundamental change are different claims.</span>
+            </div>
           </a>
-
           <a
-            class="case-row"
+            class="case-card case-card-selected"
             href="https://github.com/MOISTBEAN/investment-retrospective-skill/blob/main/examples/asts-retrospective.md"
           >
             <span class="case-ticker">ASTS</span>
-            <span class="case-copy">
-              <strong>External validation before service revenue</strong>
-              <span>Failure probabilities can fall before the core business is financially proven.</span>
-            </span>
-            <span class="case-action">Read case</span>
+            <h3>Confusing validation with monetization</h3>
+            <p>External validation reduces risk but does not equal revenue.</p>
+            <div class="case-insight">
+              <strong>Why this is misleading</strong>
+              <span>Technical progress cannot substitute for unit economics.</span>
+            </div>
           </a>
-
           <a
-            class="case-row"
+            class="case-card"
             href="https://github.com/MOISTBEAN/investment-retrospective-skill/blob/main/examples/flnc-retrospective.md"
           >
             <span class="case-ticker">FLNC</span>
-            <span class="case-copy">
-              <strong>Backlog, timing, and margin quality</strong>
-              <span>Backlog is not the same as near-term revenue or contract economics.</span>
-            </span>
-            <span class="case-action">Read case</span>
+            <h3>Confusing backlog with earnings visibility</h3>
+            <p>Backlog does not guarantee timing, margin, or cash conversion.</p>
+            <div class="case-insight">
+              <strong>Why this is misleading</strong>
+              <span>Demand visibility and earnings quality are separate variables.</span>
+            </div>
           </a>
         </div>
       </section>
 
-      <section class="quick-start shell" id="quick-start" aria-labelledby="quick-start-title">
-        <div class="quick-copy">
-          <h2 id="quick-start-title">Start with the anomaly.</h2>
-          <p>
-            Clone the repository, open the skill, and ask your preferred assistant to
-            reconstruct a past price move.
-          </p>
-          <a
-            class="text-link"
-            href="https://github.com/MOISTBEAN/investment-retrospective-skill"
-          >View repository</a>
+      <section class="quick-start" id="quick-start" aria-labelledby="quick-start-title">
+        <div class="quick-start-copy">
+          <p class="section-label">Quick Start</p>
+          <h2 id="quick-start-title">Start by breaking your intuition.</h2>
+          <p>Clone the repository, choose a past move, and force the reasoning into three questions.</p>
         </div>
+        <div class="quick-start-tools">
+          <pre><code><span><b>$</b> git clone https://github.com/MOISTBEAN/investment-retrospective-skill.git</span>
+<span><b>$</b> cd investment-retrospective-skill</span>
+<span><b>$</b> open SKILL.md with your preferred AI assistant</span></code></pre>
+          <ol class="reasoning-prompt">
+            <li><span>1</span>What happened?</li>
+            <li><span>2</span>What moved the price?</li>
+            <li><span>3</span>What can actually be attributed?</li>
+          </ol>
+        </div>
+      </section>
 
-        <div class="code-block" aria-label="Clone command">
-          <span class="code-label">Terminal</span>
-          <code>git clone https://github.com/MOISTBEAN/investment-retrospective-skill.git</code>
+      <section class="star-conversion" aria-labelledby="star-title">
+        <div>
+          <p class="section-label">Open research infrastructure</p>
+          <h2 id="star-title">If this changes how you think about markets, star the repository.</h2>
+          <p>If you believe markets are interpreted, not explained, this framework is for you.</p>
         </div>
+        <a href="https://github.com/MOISTBEAN/investment-retrospective-skill">
+          Star on GitHub <span aria-hidden="true">★</span>
+        </a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="shell footer-layout">
-        <p>Investment Retrospective Skill</p>
-        <p>Facts → Market Reaction → Causal Attribution</p>
-        <a href="https://github.com/MOISTBEAN/investment-retrospective-skill">GitHub</a>
+      <div class="page-shell footer-layout">
+        <span class="footer-seal" aria-hidden="true">IRS</span>
+        <div>
+          <p>
+            Facts <span>→</span> Market Reaction <span>→</span> Competing Explanations
+            <span>→</span> Causal Attribution
+          </p>
+          <small>Research and educational use only. Not investment advice.</small>
+        </div>
+        <a href="https://github.com/MOISTBEAN/investment-retrospective-skill">Open source ↗</a>
       </div>
     </footer>
   </body>
